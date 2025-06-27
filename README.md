@@ -24,7 +24,6 @@ data_project/
 ├── Insurance_Charges_Prediction_Project.ipynb        # Jupyter notebook with all project functionality
 ├── insurance.csv           # Dataset
 ├── requirements.txt        # Project dependencies 
-├── fix_dependencies.sh     # Script to fix dependency issues
 ├── project.txt             # Project requirements and description
 ├── model_artifacts/        # Generated directory for saved model artifacts
 │   ├── insurance_model_TIMESTAMP.h5       # Trained Keras model
@@ -217,10 +216,6 @@ The model's performance is evaluated using:
 # Clone repository
 git clone <repository-url>
 cd data_project
-
-# Fix dependencies (if needed)
-chmod +x fix_dependencies.sh
-./fix_dependencies.sh
 
 # Or install requirements directly
 pip install -r requirements.txt
