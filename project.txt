@@ -1,0 +1,67 @@
+
+Department of Computer Science COSC 202 – Data Science and AI Term Project –Summer 2025
+Forming groups and Dataset Selection deadline: Friday 13th June,2025 Submission deadline: Sunday 29th June,2025
+Demonstration Day: During lab time on Monday 30th June,2025 and Tuesday 1st July,2025.
+
+The goal of this project in the Data Science and AI course is to immerse students in a real-world problem, providing hands-on experience that builds problem-solving skills and prepares them for practical data analysis challenges. This project seeks to inspire exploration and innovation, building teamwork skills essential in data science, including task distribution and work integration.
+Throughout the project, students will tackle a comprehensive challenge that integrates the skills learned so far, including data exploration, preprocessing, machine learning model training, testing, and evaluation.
+Students will have three options/ two datasets to choose from and will use a Neural Network model to perform either classification or regression tasks. 
+There are three suggested projects available, allowing students to choose the one that aligns best with their interests.
+Option 3: Regression, Predicting Insurance Charges in the dataset below:
+insurance.csv
+Project Instructions:
+Follow the instructions below carefully to successfully complete the project. Do what is applicable to your project from the list below to have a high performing model.
+Forming groups, Dataset Selection ON TIME: [5 Marks]	
+Choose one of the provided datasets for your project. Make sure to understand the context and features of the dataset before proceeding. No change is allowed after the deadline.
+From your team from your lab section. The team size is 3-4 members. No change is allowed after the deadline.
+Once you've chosen a dataset, enter your team information and your selected dataset details in the form shared with the link below:
+https://docs.google.com/spreadsheets/d/1NL0izs1HN9tfjms1fuonR5IlMng67LMxTIh7-OdzSDw/edit?usp=sharing
+Data Exploration : [5 Marks]
+Begin by exploring the dataset to gain insights into its size, structure, features, and distributions.
+Identify any problems in the data such as missing values, outliers, class imbalance, or irregularities in the data.
+Data Visualization: [5 Marks]
+Utilize appropriate data visualization techniques (e.g., histograms, scatter plots, box plots) to visualize relationships between the features/ categories.
+visualizing key patterns, correlations and distributions within dataset.
+Write meaningful conclusion about the visualization you have done in this part.
+Data Preprocessing: [15 Marks]
+Perform data cleaning to handle missing values, outliers, or inconsistencies in the dataset if applicable.
+Apply text/category features preprocessing techniques such as encoding categorical variables (e.g., one-hot encoding) or handling ordinal data if applicable.
+Scale the features if necessary to bring them to a similar scale.
+Conduct feature engineering to create new features or transform existing ones for better representation if required.
+If the dataset is imbalanced, consider techniques such as oversampling, under sampling, or using synthetic data generation methods to balance the classes.
+You  must always keep  proper pipelining for data preprocessing and  the design of your model.
+Selecting and hyper tuning/ finetuning Machines learning model and conducting performance analysis:	[20 Marks]
+In this phase, you will implement various Neural Networks models on the preprocessed dataset and identify the best-performing model. Revise your model by applying hyperparameter tuning and cross-validation to achieve optimal performance.
+Explain the approach you follow to set the best neural network model.
+
+Set the parameters for the best model and show its performance on the training and testing datasets.
+Discuss the performance analysis results.	                              [10 Marks]
+
+
+ please check the requirements and restrictions below:
+Team size:
+Make your team of 3 to 4 students. Enter your team details [Names, IDs, section, Lecture Instructor name and Selected Option] in the corresponding Lab section’s sheet in the google form shared below, No later than Tuesday 15th, April,2025. 
+https://docs.google.com/spreadsheets/d/1NL0izs1HN9tfjms1fuonR5IlMng67LMxTIh7-OdzSDw/edit?usp=sharing
+
+Deliverables:
+Submit a Jupyter Notebook detailing all the steps below on or before Sunday 29th June, 2025.
+Brief description about your selected dataset.
+Data exploration, visualization, and preprocessing steps.
+Conclusion about the dataset visualization.
+Statistics for the data before and after pre-processing.
+Visualizations, tables, correlation matrix and explanation to support your findings and decisions.
+Neural networks Design, parameters hyper tuning along with cross validation and performance analysis. In addition, justification for the model and parameters selection.
+Setting the final model and analyzing its performance.
+
+Submit 6 Slides power point shows the workflow(steps), summary of data set exploration and visualization, preprocessing, selected model, hyper parameter tuning, and model performance on or before Sunday 29th June,2025.
+Live demonstration:  Demo for each group will last for 10 min followed by 5-10 min of questions and Answers individual sessions.
+Every group should have only one submission
+Grade Distribution:
+Project work will be assessed through the demonstration and the submitted Jupiter notebook [60 %].
+Questions and answers after the demo will be assessed individually [40 %].
+Not attending the demo will result in getting 0 for the Questions and answers part.
+No late submissions are accepted.
+If you have any questions or need clarification on any aspect of the project, feel free to reach out to your instructor for assistance.
+
+
+Good luck!
