@@ -21,10 +21,11 @@ This project develops a neural network regression model to predict insurance cha
 ```
 data_project/
 │
-├── model.py                # Main project file containing all functionality
+├── Insurance_Charges_Prediction_Project.ipynb        # Jupyter notebook with all project functionality
 ├── insurance.csv           # Dataset
 ├── requirements.txt        # Project dependencies 
 ├── fix_dependencies.sh     # Script to fix dependency issues
+├── project.txt             # Project requirements and description
 ├── model_artifacts/        # Generated directory for saved model artifacts
 │   ├── insurance_model_TIMESTAMP.h5       # Trained Keras model
 │   ├── preprocessor_TIMESTAMP.pkl         # Saved preprocessing pipeline
@@ -32,6 +33,8 @@ data_project/
 │   ├── metrics_TIMESTAMP.json             # Evaluation metrics
 │   ├── hyperparameters_TIMESTAMP.json     # Best hyperparameters
 │   └── manifest_TIMESTAMP.json            # Manifest tracking all artifacts
+├── training_evaluation.png  # Enhanced training visualization
+├── model_analysis.png       # Advanced model performance analysis
 └── README.md               # Project documentation (this file)
 ```
 
@@ -48,6 +51,7 @@ data_project/
 - **scikeras**: Adopted for scikit-learn compatibility with newer TensorFlow versions
 - **tqdm**: Implemented for progress tracking throughout the pipeline
 - **pickle**: Used for serializing the preprocessing pipeline
+- **Jupyter Notebook**: For interactive development and documentation
 
 ### Justification of Technology Choices
 1. **Neural Networks (over traditional ML)**: 
@@ -127,6 +131,14 @@ The final model is trained with:
 - Early stopping to prevent overfitting
 - Model checkpointing to save best weights
 - Custom progress tracking with tqdm
+
+**Enhanced Visualizations:**
+- Training and validation loss curves
+- MAE progression over epochs
+- Actual vs. predicted values scatter plot
+- Prediction error distribution
+- Residuals analysis plots
+- Feature-specific error analysis
 
 **Evaluation Metrics:**
 - Mean Squared Error (MSE)
@@ -216,13 +228,27 @@ pip install -r requirements.txt
 
 ### Running the Project
 ```bash
-python model.py
+# Open the Jupyter notebook
+jupyter notebook Maeen\'s_AI.ipynb
+
+# Or run with Jupyter Lab
+jupyter lab
 ```
+
+The notebook is divided into clear sections that follow the data science workflow:
+1. Library imports and setup
+2. Data exploration 
+3. Data visualization
+4. Preprocessing
+5. Neural network model design
+6. Hyperparameter tuning
+7. Model training and evaluation
+8. Model saving and persistence
 
 ### Making New Predictions
 ```python
 # Example code for making predictions with saved model
-from model import load_model_from_manifest, make_prediction
+# Add this code to a new cell in the notebook
 
 # Load model from a specific manifest
 manifest_path = 'model_artifacts/manifest_TIMESTAMP.json'
