@@ -167,9 +167,10 @@ Input Layer (features) → Dense Layer with ReLU → Dropout →
 - **Neurons**: Variable (32-128) based on tuning
 - **Dropout**: Applied for regularization (0.1-0.3)
 - **Optimizer**: Adam with tunable learning rate
+- **Loss Function**: Mean Squared Error (MSE) for regression task
 
 ## Hyperparameter Tuning
-The hyperparameter tuning approach addresses compatibility challenges between different versions of KerasRegressor:
+The hyperparameter tuning approach addresses compatibility challenges between different versions of KerasRegressor with both automatic and manual implementations:
 
 1. **Dual Implementation**:
    - Automatically detects available implementations (scikit-learn vs. scikeras)
@@ -183,6 +184,14 @@ The hyperparameter tuning approach addresses compatibility challenges between di
    - Custom progress bar for GridSearchCV execution
    - Estimates completion time for lengthy tuning process
 
+4. **Hyperparameter Grid**:
+   - Hidden layers: [1, 2, 3]
+   - Neurons: [32, 64, 128]
+   - Dropout rate: [0.1, 0.2, 0.3]
+   - Learning rate: [0.001, 0.01]
+   - Batch size: [16, 32, 64]
+   - Epochs: [50, 100, 500]
+
 ## Saving and Loading Functionality
 The project implements a robust model persistence strategy:
 
@@ -191,15 +200,16 @@ The project implements a robust model persistence strategy:
    - Enables tracking multiple model versions
 
 2. **Complete Ecosystem Capture**:
-   - Model weights and architecture
-   - Preprocessing pipeline
-   - Training history
-   - Evaluation metrics
-   - Hyperparameters
+   - Model weights and architecture (HDF5 format)
+   - Preprocessing pipeline (pickle format)
+   - Training history (JSON)
+   - Evaluation metrics (JSON)
+   - Hyperparameters (JSON)
 
 3. **Manifest System**:
    - Central JSON manifest tracks locations of all artifacts
    - Simplifies model loading and reconstruction
+   - Facilitates reproducibility and deployment
 
 ## Performance Metrics
 The model's performance is evaluated using:
@@ -208,6 +218,8 @@ The model's performance is evaluated using:
 - **RMSE**: Interpreted in the same units as the target variable (dollars)
 - **MAE**: Average absolute difference between predictions and actual values
 - **R²**: Proportion of variance in charges explained by the model
+
+The model achieves robust performance with careful tuning of hyperparameters, particularly showing strong predictive power for insurance charges driven by smoking status and age factors.
 
 ## Usage Instructions
 
@@ -224,7 +236,7 @@ pip install -r requirements.txt
 ### Running the Project
 ```bash
 # Open the Jupyter notebook
-jupyter notebook Maeen\'s_AI.ipynb
+jupyter notebook Insurance_Charges_Prediction_Project.ipynb
 
 # Or run with Jupyter Lab
 jupyter lab
